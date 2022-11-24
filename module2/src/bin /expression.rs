@@ -18,7 +18,7 @@ fn main() {
         true
     } else {
         false
-    }
+    };
     print(res);
 }
 
