@@ -10,6 +10,31 @@
 */
 
 fn main() {
+    let shop = Shop {
+        phones: Phones::Motorola,
+        headsets: Headets::SkullCandy,
+    };
+    dbg!("{:?}", shop);
     
 }
 
+#[derive(Debug)]
+enum Headsets {
+    SkullCandy,
+    Boat,
+    Mivi,
+}
+
+#[derive(Debug)]
+enum Phones {
+    Apple,
+    Samsung,
+    Motorola,
+    Nokia,
+}
+
+#[derive(Debug)]
+struct Shop {
+    phones: Phones,
+    headsets: Headsets,
+}
