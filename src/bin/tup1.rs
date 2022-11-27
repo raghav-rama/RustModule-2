@@ -44,7 +44,7 @@ fn my_tup() -> (i32, i32) {
 
     let y = buf
     .trim()
-    .parse::<i32>()
+    .parse::<i32>() 
     .unwrap();
 
     my_tup = (x, y);
